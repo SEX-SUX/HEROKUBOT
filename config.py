@@ -15,5 +15,5 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", "")
 
-OWNER_ID = getenv("OWNER_ID", "1808943146")
+OWNER_ID = getenv("OWNER_ID", "7373125778")
     
