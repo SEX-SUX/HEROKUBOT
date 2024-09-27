@@ -1,0 +1,12 @@
+pyrogram
+python-decouple
+requests
+python-dotenv
+motor
+TgCrypto
+aiohttp
+urllib3
+pyromod
+dnspython
+pymongo==3.12.0
+py-tgcalls==1.2.9
