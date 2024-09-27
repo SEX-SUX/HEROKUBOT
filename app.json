@@ -1,53 +1,61 @@
 {
-    "name": "ɴᴇxɪᴏ ᴍᴜsɪᴄ",
-    "description": "❖ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ, ᴡʀɪᴛᴛᴇɴ ɪɴ ᴘʏᴛʜᴏɴ ᴡɪᴛʜ ᴘʏʀᴏɢʀᴀᴍ ᴀɴᴅ ᴘʏ-ᴛɢᴄᴀʟʟs.",
-    "logo": "https://telegra.ph/file/77c52f7296918d486998c.jpg",
+    "name": "HEROKUHELP",
+    "description": "HEROKU CONTROL BOT IT CAN HANDLE ALL THINGS IN HEROKU WITH THE HELP OF HEROKU API KEY.",
+    "logo": "https://envs.sh/0oR.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "nexio-music",
-    "MusicBot",
+    "NEXIO",
+    "HEROKUHELP",
     "telegram-bot",
     "pyrogram"
     ],
+    
+    "stack": "container",
     "env": {
       "API_ID": {
-        "description": "❖ ɢᴇᴛ ᴛʜɪs ᴠᴀʟᴜᴇ ғʀᴏᴍ https://my.telegram.org",
+        "description": "Get this value from https://my.telegram.org",
         "value": "",
         "required": true
       },
       "API_HASH": {
-        "description": "❖ ɢᴇᴛ ᴛʜɪs ᴠᴀʟᴜᴇ ғʀᴏᴍ https://my.telegram.org",
+        "description": "Get this value from https://my.telegram.org",
         "value": "",
         "required": true
-      }
+      },
       "BOT_TOKEN": {
-        "description": "❖ ɢᴇᴛ ᴛʜɪs ᴠᴀʟᴜᴇ ғʀᴏᴍ https://my.telegram.org",
+        "description": "A Bot's token Get it from @Botfather",
         "value": "",
         "required": true
-      }
+      },
+      
       "OWNER_ID": {
-        "description": "❖ ɢᴇᴛ ᴛʜɪs ᴠᴀʟᴜᴇ ғʀᴏᴍ https://my.telegram.org",
+        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
         "value": "",
         "required": true
-      }
+      },
+      
       "HEROKU_API_KEY": {
-        "description": "❖ ɢᴇᴛ ᴛʜɪs ᴠᴀʟᴜᴇ ғʀᴏᴍ https://my.telegram.org",
+        "description": "Your Heroku account's API key",
         "value": "",
         "required": true
-      }
+      
+      
+      
     },
     "buildpacks": [
           {
               "url": "heroku/python"
           },
           {
-              "url": "heroku/nodejs"
-          },
-          {
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
       ],
-      "stack": "container"
-  }
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "basic"
+          }
+      }
+      }
