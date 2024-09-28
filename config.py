@@ -17,6 +17,6 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY", "")
 
 OWNER_ID = getenv("OWNER_ID", "7373125778")
     
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/SEX-SUX/HEROKUBOT")
